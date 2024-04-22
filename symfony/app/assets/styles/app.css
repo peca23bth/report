@@ -1,0 +1,18 @@
+body {
+    background-color: skyblue;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+h1 {
+    border-bottom: 4px double #ccc;
+}
+
+.site-header {
+  height: 90px;
+}
+
+body {
+  background: url('../images/background.jpg');
+  background-size: cover;
+}
