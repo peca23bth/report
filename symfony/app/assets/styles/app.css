@@ -1,18 +1,49 @@
-body {
-    background-color: skyblue;
-    margin: 0 auto;
-    max-width: 400px;
-}
-
 h1 {
     border-bottom: 4px double #ccc;
 }
 
 .site-header {
-  height: 90px;
+  height: 91px;
 }
 
 body {
   background: url('../images/background.jpg');
+  background: url('../images/peter.jpg');
   background-size: cover;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.column {
+  flex: 1;
+  padding: 0 15px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.yellow-background {
+  background-color: yellow;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
