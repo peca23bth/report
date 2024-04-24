@@ -13,7 +13,7 @@ class QuoteController extends AbstractController
     {
 
         $quotes = [
-            "Life is to important to take seriously.",
+            "Life is to important to take it seriously.",
             "Dont wait for tomorrow",
             "Work hard, play hard"
         ];

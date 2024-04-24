@@ -1,0 +1,20 @@
+{# templates/card/draw_multiple.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Dra Flera Kort{% endblock %}
+
+{% block body %}
+<h1>Dra Flera Kort</h1>
+{% if cards %}
+    <p>Du drog följande kort:</p>
+    <ul>
+        {% for card in cards %}
+            <span class="card">{{ card.getUnicode() }}</span>
+        {% endfor %}
+    </ul>
+    <p>Återstående kort i kortleken: {{ remaining }}</p>
+{% else %}
+    <p>Inga kort kvar att dra.</p>
+{% endif %}
+{% endblock %}

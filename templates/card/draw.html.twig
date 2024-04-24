@@ -1,0 +1,16 @@
+{# templates/card/draw.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Dra ett Kort{% endblock %}
+
+{% block body %}
+<h1>Dra ett Kort</h1>
+{% if card %}
+    <p>Du drog:</p>
+    <span class="card">{{ card.getUnicode() }}</span>
+    <p>Återstående kort i kortleken: {{ remaining }}</p>
+{% else %}
+    <p>Inga kort kvar att dra.</p>
+{% endif %}
+{% endblock %}

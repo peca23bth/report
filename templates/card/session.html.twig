@@ -1,0 +1,23 @@
+{# templates/card/session.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<h1>Session Innehåll</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Nyckel</th>
+            <th>Värde</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for key, value in sessionData %}
+        <tr>
+            <td>{{ key }}</td>
+            <td>{{ value|json_encode }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

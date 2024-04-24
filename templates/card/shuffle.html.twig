@@ -1,0 +1,15 @@
+{# templates/card/shuffle.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Blandad Kortlek{% endblock %}
+
+{% block body %}
+<h1>Blandade kort</h1>
+<p>Nu har vi blandat kortleken.</p>
+  <tbody>
+      {% for card in deck %}
+          <span class="card">{{ card.getUnicode() }}</span>
+      {% endfor %}
+  </tbody>
+{% endblock %}

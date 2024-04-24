@@ -1,0 +1,15 @@
+{# templates/card/deck.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Fullständig Kortlek{% endblock %}
+
+{% block body %}
+<h1>Fullständig Kortlek</h1>
+<p>Antal kort: {{ deck|length }}</p>
+<tbody>
+    {% for card in deck %}
+        <span class="card">{{ card.getUnicode() }}</span>
+    {% endfor %}
+</tbody>
+{% endblock %}

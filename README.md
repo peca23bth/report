@@ -1,6 +1,6 @@
 # Me-sida för kursen MVC
 
-![Alt-text](https://kinsta.com/wp-content/uploads/2023/03/The-Symfony-logo.png)
+![bild på symfony](https://kinsta.com/wp-content/uploads/2023/03/The-Symfony-logo.png)
 
 ## Beskrivning
 

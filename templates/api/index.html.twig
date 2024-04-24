@@ -1,0 +1,28 @@
+{# templates/api/index.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<h1>API Sammanställning</h1>
+<p>Här är en lista över alla tillgängliga JSON-routes:</p>
+<table>
+    <thead>
+        <tr>
+            <th>Route Name</th>
+            <th>Path</th>
+            <th>Methods</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for name, route in routes %}
+        <tr>
+            <td>{{ name }}</td>
+            <td>{{ route.path }}</td>
+            <td>{{ route.methods|join(', ') }}</td>
+            <td>{{ route.description }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,18 @@
+{# templates/card/index.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Kortleks Förstasida{% endblock %}
+
+{% block body %}
+<h1>Kortlekspel</h1>
+<p>Välj något av länkarna nedan:</p>
+<ul>
+    <li><a href="{{ path('session_show') }}">Visa Session</a></li>
+    <li><a href="{{ path('session_delete') }}">Radera Session</a></li>
+    <li><a href="{{ path('card_deck') }}">Visa Kortlek</a></li>
+    <li><a href="{{ path('card_deck_shuffle') }}">Blanda Kortlek</a></li>
+    <li><a href="{{ path('card_deck_draw') }}">Dra Ett Kort</a></li>
+    <li><a href="{{ path('card_deck_draw_multiple', {'number': 5}) }}">Dra Fem Kort</a></li>
+</ul>
+{% endblock %}
